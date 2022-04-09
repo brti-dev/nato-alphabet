@@ -1,0 +1,11 @@
+{
+  "name": "military-alphabet",
+  "version": "1.0.0",
+  "description": "Input letters and output the international NATO/ICAO telephony equivalent",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Matt Berti",
+  "license": "Apache"
+}
