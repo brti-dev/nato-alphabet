@@ -73,8 +73,12 @@ function scrollToTop() {
 setColor(document.body, COLORS[color])
 
 document.addEventListener('keydown', function (e) {
-  console.log(e)
   const output = document.getElementById('output')
+  if (!output) {
+    console.error('output not found')
+    return
+  }
+
   if (e.key in KEYS) {
     const block = document.createElement('div')
     block.className = 'block'
@@ -111,4 +115,14 @@ document.addEventListener('keydown', function (e) {
   if (e.key === 'ArrowRight') {
     incrementColor()
   }
+})
+
+const input = document.getElementById('text-input')
+if (!input) {
+  console.error('input not found')
+} else {
+  input.focus()
+}
+input?.addEventListener('blur', function () {
+  input.focus()
 })
