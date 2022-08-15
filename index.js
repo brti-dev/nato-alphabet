@@ -122,7 +122,10 @@ if (!input) {
   console.error('input not found')
 } else {
   input.focus()
+  input.addEventListener('blur', function () {
+    input.focus()
+  })
+  document.body.addEventListener('click', function () {
+    input.focus()
+  })
 }
-input?.addEventListener('blur', function () {
-  input.focus()
-})
