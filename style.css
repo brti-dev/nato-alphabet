@@ -38,7 +38,7 @@ main {
 }
 
 #text-input {
-  clip: rect(0 0 0 0);
+  /* clip: rect(0 0 0 0);
   clip-path: inset(50%);
   height: 1px;
   overflow: hidden;
@@ -46,5 +46,5 @@ main {
   top: 0;
   left: 0;
   white-space: nowrap;
-  width: 1px;
+  width: 1px; */
 }
