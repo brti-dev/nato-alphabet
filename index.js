@@ -125,7 +125,7 @@ if (!input) {
   input.addEventListener('blur', function () {
     input.focus()
   })
-  document.body.addEventListener('click', function () {
+  document.addEventListener('click', function () {
     input.focus()
   })
 }
